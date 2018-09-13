@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),Main2Activity.class);
+                startActivity(i);
+            }
+        });
 
 
 
