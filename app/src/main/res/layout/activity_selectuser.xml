@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectuser">
+
+
+    <Button
+        android:id="@+id/admin"
+        android:text="Admin"
+        android:background="@drawable/button"
+        android:layout_below="@+id/logo"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_marginLeft="35dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/user"
+        android:text="User"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/lock"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/admin"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">secIt</string>
+    <string name="not_a_user_register">Not a user? Register</string>
+</resources>
