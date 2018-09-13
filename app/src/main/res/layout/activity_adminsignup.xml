@@ -22,21 +22,22 @@
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
     android:drawableLeft="@drawable/ic_account_circle_black_24dp"/>
+
     <EditText
         android:id="@+id/mailid"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Username"
-        tools:ignore="LabelFor"
-        android:textColorHint="#707070"
         android:layout_below="@+id/name"
-        android:drawablePadding="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="10dp"
-        android:inputType="textEmailAddress"
+        android:backgroundTint="@android:color/transparent"
         android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
-        android:backgroundTint="@android:color/transparent" />
+        android:drawablePadding="15dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#707070"
+        tools:ignore="LabelFor" />
     <EditText
     android:id="@+id/phoneno"
     android:layout_width="match_parent"

@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         register=(TextView)findViewById(R.id.registertag);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Intent intent=new Intent(getApplicationContext(),selectuser.class);
                 startActivity(intent);
-
             }
         });
 
