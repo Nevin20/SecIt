@@ -14,9 +14,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".adminsignup" />
         <activity android:name=".selectuser" />
-        <activity android:name=".splash">
-
-        </activity>
+        <activity android:name=".splash"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".usersignup" />
         <activity android:name=".Main2Activity" />
@@ -37,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".New_signin"></activity>
     </application>
 
 </manifest>

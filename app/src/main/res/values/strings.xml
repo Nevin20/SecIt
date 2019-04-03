@@ -33,4 +33,6 @@
 
     <string name="mobile.no">Enter mobile No.</string>
     <string name="verify_otp">verify OTP</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter password</string>
 </resources>
