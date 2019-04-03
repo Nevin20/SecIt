@@ -9,15 +9,15 @@ import android.widget.ImageView;
 
 public class selectuser extends AppCompatActivity {
     ImageView logo;
-    Button admin,user;
+    ImageView admin,user;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selectuser);
-        admin=(Button)findViewById(R.id.admin);
-        user=(Button)findViewById(R.id.user);
+        admin=(ImageView) findViewById(R.id.admin);
+        user=(ImageView) findViewById(R.id.user);
         admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

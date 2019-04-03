@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="400dp"
+        android:maxHeight="600dp"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:id="@+id/qrimage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linear"
+            android:layout_below="@id/qrimage"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="E.CODE"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/EncryptedCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="15dp"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:text="add"
+            android:textColor="#ffff"
+            android:background="@drawable/button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/addButton"/>
+
+        <Button
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:id="@+id/qrbutton"
+            android:textColor="#ffff"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addButton"
+            android:text="Generate Qr"/>
+
+
+</RelativeLayout>

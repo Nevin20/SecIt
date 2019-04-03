@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="QRcolorB">#000000</color>
+    <color name="QRcolorW">#ffffff</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="darkgrey">#6c6c6c</color>
+    <color name="cardview">#F0F0E0</color>
+    <color name="hint">#bcbcbc</color>
 </resources>

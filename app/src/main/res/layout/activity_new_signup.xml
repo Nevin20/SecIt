@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/background"></LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="160dp"
+        app:cardCornerRadius="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/lock"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorTransparent"
+            android:id="@+id/editemail"
+            android:alpha="0.8"
+            android:layout_below="@+id/typespinner"
+            android:hint="@string/mobile.no"
+            android:textColorHint="#bcbcbc"
+            android:drawableLeft="@drawable/phone"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="35dp"
+            android:inputType="phone"
+            tools:ignore="LabelFor"
+            android:drawableStart="@drawable/phone" />
+
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorTransparent"
+            android:id="@+id/otp"
+            android:alpha="0.8"
+            android:layout_below="@+id/typespinner"
+            android:hint="@string/verify_otp"
+            android:textColorHint="#bcbcbc"
+            android:drawableLeft="@drawable/ic_verified_user_black_24dp"
+            android:layout_marginTop="220dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="35dp"
+            android:inputType="number"
+            tools:ignore="LabelFor"
+            android:drawableStart="@drawable/ic_verified_user_black_24dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cont."
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/login"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="240dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container1"></FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

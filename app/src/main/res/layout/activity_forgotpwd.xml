@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Forgotpwd">
+
+    <EditText
+        android:id="@+id/mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile no." tools:ignore="LabelFor"
+        android:textColorHint="#707070"
+        android:drawablePadding="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:inputType="number"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        />
+
+   <ImageButton
+       android:id="@+id/Go"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_below="@+id/mobile_no"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/next_page"
+       android:background="@drawable/btn"
+      android:layout_marginTop="30dp"
+       />
+
+</RelativeLayout>
