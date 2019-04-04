@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
+
         applicationId "com.example.nevin.secit"
         minSdkVersion 16
         targetSdkVersion 28
@@ -28,6 +29,11 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.android.gms:play-services-vision:11.0.4'
 
+    implementation "com.google.firebase:firebase-auth:9.0.2"
+    implementation 'com.google.firebase:firebase-database:9.6.1'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+
+    implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.google.android.gms:play-services:11.0.4'
 

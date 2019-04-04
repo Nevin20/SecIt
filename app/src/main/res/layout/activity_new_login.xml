@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".New_login">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/background"></LinearLayout>
+
     <android.support.v4.widget.CircleImageView
         android:id="@+id/logonew"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/im"/>
+        android:src="@drawable/logo"/>
     <TextView
         android:id="@+id/logoname"
         android:layout_width="match_parent"
@@ -34,7 +39,7 @@
       android:layout_centerHorizontal="true"
       android:layout_below="@+id/logoname"
       android:layout_marginBottom="20dp"
-      android:layout_marginTop="70dp"
+      android:layout_marginTop="90dp"
       android:textColor="@color/QRcolorW"
       />
     <Button
