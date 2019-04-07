@@ -14,7 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".adminsignup" />
         <activity android:name=".selectuser" />
-        <activity android:name=".splash"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".usersignup" />
         <activity android:name=".Main2Activity" />
@@ -28,14 +27,18 @@
             android:label="@string/title_activity_user_navigation"
             android:theme="@style/AppTheme" />
         <activity android:name=".New_login" />
-        <activity android:name=".New_signup">
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".New_signin"></activity>
+        <activity android:name=".New_signin" />
+        <activity android:name=".usersignp" />
+        <activity android:name=".OTP" />
+        <activity android:name=".New_signup" />
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>

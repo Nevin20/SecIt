@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "677197345441",
+    "firebase_url": "https://secit-3eb4a.firebaseio.com",
+    "project_id": "secit-3eb4a",
+    "storage_bucket": "secit-3eb4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677197345441:android:164754d7e40e485c",
+        "android_client_info": {
+          "package_name": "com.example.nevin.secit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677197345441-chjl6jpr570uat5rbg61shdf9pob8vuh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nevin.secit",
+            "certificate_hash": "9c410d68b987e61c9f6a13e7af5d86a3b5229ce6"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgp3cxrSAXBYbMxzXJEdFyiHvedZT5kvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677197345441-9ps7rvtcukq3mrodghq28nmi585f6joe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

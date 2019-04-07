@@ -85,7 +85,7 @@ public class Navigation extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_admin, new Profile()).commit();
 
         } else if (id == R.id.NewDocument) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_admin, new QRscanner()).commit();
+//            getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_admin, new QRscanner()).commit();
 
 
         } else if (id == R.id.MyDocument) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    tools:context=".New_signup">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,13 +29,36 @@
             android:layout_marginTop="10dp"/>
 
         <EditText
+            android:textColor="@android:color/white"
             android:backgroundTint="@color/colorTransparent"
-            android:id="@+id/mobile_no"
+            android:id="@+id/email_edit"
             android:alpha="0.8"
             android:layout_below="@+id/im"
-            android:hint="@string/mobile.no"
-            android:textColorHint="#000000"
-            android:drawableLeft="@drawable/phone"
+            android:hint="Enter Email"
+            android:textColorHint="#bcbcbc"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="35dp"
+            android:inputType="textWebEmailAddress"
+            tools:ignore="LabelFor"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp" />
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorTransparent"
+            android:id="@+id/pass_edit"
+            android:alpha="0.8"
+            android:layout_below="@+id/email_edit"
+            android:hint="Enter password"
+            android:textColorHint="#bcbcbc"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
             android:layout_marginTop="180dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,17 +70,17 @@
             android:layout_marginEnd="35dp"
             android:inputType="phone"
             tools:ignore="LabelFor"
-            android:drawableStart="@drawable/phone" />
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/buttoncon"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:src="@drawable/login"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="240dp"
-            />
+        <Button
+            android:background="@drawable/button_click"
+            android:layout_margin="10dp"
+            android:textColor="#ffff"
+            android:text="SIGN UP"
+            android:id="@+id/signup_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
 
     </android.support.v7.widget.CardView>
 

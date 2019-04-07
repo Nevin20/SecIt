@@ -1,41 +1,41 @@
 package com.example.nevin.secit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
-
-import com.google.firebase.auth.FirebaseAuth;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class New_signup extends AppCompatActivity {
-
-    EditText mobnum,mobotp;
-    CircleImageView verification;
-//    private FirebaseAuth mAuth;
-//    private String mVerificationId;
-
+    EditText monum ;
+    CircleImageView cont;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_signup);
+        monum = findViewById(R.id.mobile_no);
+        cont =(CircleImageView) findViewById(R.id.buttoncon);
 
-        mobnum=findViewById(R.id.mobile_no);
-        mobotp=findViewById(R.id.otp);
-        verification=findViewById(R.id.cont_);
+        cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        //mAuth= FirebaseAuth.getInstance();
-//
-//        String mobile = mobnum.getText().toString().trim();
-//        if(mobile.isEmpty() || mobile.length() < 10){
-//            mobnum.setError("Enter a valid mobile");
-//            mobnum.requestFocus();
-//            return;
-//        }
+                String mobile = monum.getText().toString().trim();
 
+                if(mobile.isEmpty() || mobile.length() < 10){
+                    monum.setError("Enter a valid mobile");
+                    monum.requestFocus();
+                    return;
+                }
 
+                Intent intent = new Intent(getApplicationContext(),OTP.class);
+                intent.putExtra("mobile", mobile);
+                startActivity(intent);
 
-
+            }
+        });
     }
 }

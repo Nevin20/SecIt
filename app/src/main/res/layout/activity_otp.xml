@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    tools:context=".OTP">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,21 +21,22 @@
         android:layout_marginRight="30dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/im"
             android:background="@drawable/lock"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"/>
 
         <EditText
+            android:textColor="@android:color/white"
             android:backgroundTint="@color/colorTransparent"
-            android:id="@+id/mobile_no"
+            android:id="@+id/otp_num"
             android:alpha="0.8"
-            android:layout_below="@+id/im"
-            android:hint="@string/mobile.no"
-            android:textColorHint="#000000"
-            android:drawableLeft="@drawable/phone"
+            android:layout_below="@+id/image"
+            android:hint="Enter OTP"
+            android:textColorHint="#bcbcbc"
+            android:drawableLeft="@drawable/lock"
             android:layout_marginTop="180dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,17 +48,16 @@
             android:layout_marginEnd="35dp"
             android:inputType="phone"
             tools:ignore="LabelFor"
-            android:drawableStart="@drawable/phone" />
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/buttoncon"
+            android:id="@+id/button_otp"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
             android:src="@drawable/login"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="240dp"
-            />
+            android:layout_marginLeft="240dp"/>
 
     </android.support.v7.widget.CardView>
 
